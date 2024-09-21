@@ -1,0 +1,170 @@
+body {
+    background-color: aliceblue;
+}
+.abc ul li a {
+   
+    color: rgb(115, 101, 237);
+    padding: 10px 20px;
+    font-size: 18px;
+    
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+
+/* .abc ul li :hover {
+    background-color: aqua;
+    color: #333;
+    border: 2px solid rgb(115, 101, 237);
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+} */
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.962); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px black;
+}
+
+ul li {
+    margin-left: 30px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1); 
+}
+
+
+footer{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* For devices with a max-width of 1200px (large tablets, smaller laptops) */
+@media (max-width: 1200px) {
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* For devices with a max-width of 992px (large tablets, small laptops) */
+@media (max-width: 992px) {
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .package {
+        width: 45%;
+    }
+}
+
+/* For devices with a max-width of 768px (tablets) */
+@media (max-width: 768px) {
+    .packages {
+        flex-direction: column;
+    }
+
+    .package {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* For devices with a max-width of 576px (large smartphones) */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .package {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .package h2 {
+        font-size: 18px;
+    }
+}
+
+/* For devices with a max-width of 400px (smaller smartphones) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .package {
+        padding: 1rem;
+    }
+
+    .package h2 {
+        font-size: 16px;
+    }
+
+    .package p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}

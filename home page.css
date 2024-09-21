@@ -1,0 +1,162 @@
+body {
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/942/689/desktop-wallpaper-travel-artistic-hq-travel-travel-agency.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.962); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 15px;
+}
+
+.logo-container h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-left: 30px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1); 
+}
+
+/* For devices with a max-width of 1200px (large tablets, smaller laptops) */
+@media (max-width: 1200px) {
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* For devices with a max-width of 992px (large tablets, small laptops) */
+@media (max-width: 992px) {
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .package {
+        width: 45%;
+    }
+}
+
+/* For devices with a max-width of 768px (tablets) */
+@media (max-width: 768px) {
+    .packages {
+        flex-direction: column;
+    }
+
+    .package {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* For devices with a max-width of 576px (large smartphones) */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .package {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .package h2 {
+        font-size: 18px;
+    }
+}
+
+/* For devices with a max-width of 400px (smaller smartphones) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .package {
+        padding: 1rem;
+    }
+
+    .package h2 {
+        font-size: 16px;
+    }
+
+    .package p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+

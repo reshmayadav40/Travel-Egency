@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+
+
+body {
+   
+    background-color: #f5f5f5;
+    color: #333;
+}
+.u{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 4rem 4rem 4rem rgba(6, 45, 87, 0.1);
+   border: 1px solid rgba(12, 11, 11, 0.1);
+   height: 40px;
+   padding-top: 10px;
+}
+
+.u {
+    background-color: #dff1e0;
+}
+
+.abc {
+    background-color: #e19d2f;
+    height: 100px;
+    
+}
+.abc {
+    background-color: #f9a825;
+    height: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.962); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.abc ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px 40px;
+    border-radius: 25px;
+}
+
+.abc ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #333;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.abc ul li a:hover::before {
+    width: 100%;    
+    left: 0;
+}
+
+.abc ul li a:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+
+ul li {
+    margin-left: 30px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+ ul li a:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1); 
+}
+
+
+
+
+.hero {
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+
+.package {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-repeat: no-repeat;
+}
+
+.package:hover {
+    transform: translateY(-10px);
+}
+
+.package img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.package h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.package p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+
+.package button:hover {
+    background-color: #333;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+
+/* For devices with a max-width of 1200px (large tablets, smaller laptops) */
+@media (max-width: 1200px) {
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* For devices with a max-width of 992px (large tablets, small laptops) */
+@media (max-width: 992px) {
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .package {
+        width: 45%;
+    }
+}
+
+/* For devices with a max-width of 768px (tablets) */
+@media (max-width: 768px) {
+    .packages {
+        flex-direction: column;
+    }
+
+    .package {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* For devices with a max-width of 576px (large smartphones) */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .package {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .package h2 {
+        font-size: 18px;
+    }
+}
+
+/* For devices with a max-width of 400px (smaller smartphones) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .package {
+        padding: 1rem;
+    }
+
+    .package h2 {
+        font-size: 16px;
+    }
+
+    .package p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
